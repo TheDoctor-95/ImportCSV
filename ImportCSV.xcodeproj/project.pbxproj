@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAAAD29D21D8EBEE00DBD0DF /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD29C21D8EBEE00DBD0DF /* csv.swift */; };
+		FAAAD2A521D8F68200DBD0DF /* fci-breeds.csv in Resources */ = {isa = PBXBuildFile; fileRef = FAAAD2A421D8F68200DBD0DF /* fci-breeds.csv */; };
+		FAAAD2A821D8F6E300DBD0DF /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD2A721D8F6E300DBD0DF /* Breed.swift */; };
+		FAAAD2AB21D8FBC400DBD0DF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD2AA21D8FBC400DBD0DF /* Tools.swift */; };
 		FAB1C57E21D7E3FD00D81F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C57D21D7E3FD00D81F95 /* AppDelegate.swift */; };
 		FAB1C58021D7E3FD00D81F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C57F21D7E3FD00D81F95 /* ViewController.swift */; };
 		FAB1C58321D7E3FD00D81F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1C58121D7E3FD00D81F95 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAAAD29C21D8EBEE00DBD0DF /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		FAAAD2A421D8F68200DBD0DF /* fci-breeds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fci-breeds.csv"; sourceTree = "<group>"; };
+		FAAAD2A721D8F6E300DBD0DF /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		FAAAD2AA21D8FBC400DBD0DF /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		FAB1C57A21D7E3FD00D81F95 /* ImportCSV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImportCSV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB1C57D21D7E3FD00D81F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB1C57F21D7E3FD00D81F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAAAD29B21D8EBAE00DBD0DF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAD2A421D8F68200DBD0DF /* fci-breeds.csv */,
+				FAAAD29C21D8EBEE00DBD0DF /* csv.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		FAAAD2A621D8F6C900DBD0DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAD2A721D8F6E300DBD0DF /* Breed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAAAD2A921D8FBB900DBD0DF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAD2AA21D8FBC400DBD0DF /* Tools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		FAB1C57121D7E3FD00D81F95 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +130,9 @@
 		FAB1C57C21D7E3FD00D81F95 /* ImportCSV */ = {
 			isa = PBXGroup;
 			children = (
+				FAAAD2A921D8FBB900DBD0DF /* Tools */,
+				FAAAD2A621D8F6C900DBD0DF /* Models */,
+				FAAAD29B21D8EBAE00DBD0DF /* Libraries */,
 				FAB1C57D21D7E3FD00D81F95 /* AppDelegate.swift */,
 				FAB1C57F21D7E3FD00D81F95 /* ViewController.swift */,
 				FAB1C58121D7E3FD00D81F95 /* Main.storyboard */,
@@ -229,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAAD2A521D8F68200DBD0DF /* fci-breeds.csv in Resources */,
 				FAB1C58821D7E3FF00D81F95 /* LaunchScreen.storyboard in Resources */,
 				FAB1C58521D7E3FF00D81F95 /* Assets.xcassets in Resources */,
 				FAB1C58321D7E3FD00D81F95 /* Main.storyboard in Resources */,
@@ -256,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAAD2A821D8F6E300DBD0DF /* Breed.swift in Sources */,
+				FAAAD29D21D8EBEE00DBD0DF /* csv.swift in Sources */,
 				FAB1C58021D7E3FD00D81F95 /* ViewController.swift in Sources */,
 				FAB1C57E21D7E3FD00D81F95 /* AppDelegate.swift in Sources */,
+				FAAAD2AB21D8FBC400DBD0DF /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

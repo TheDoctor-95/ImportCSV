@@ -10,11 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    /* CSV Repository: https://github.com/paiv/fci-breeds/blob/master/fci-breeds.csv */
+
+
+    var breeds:[Breed] = [Breed]()
+    var tools:Tools = Tools()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tools.parseCSVBreed(breeds: &breeds)
+        
+        printBreeds()
     }
 
-
+    func printBreeds(){
+        
+        for breed in breeds {
+            print(breed)
+        }
+        
+    }
+ 
 }
 
